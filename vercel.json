@@ -1,9 +1,17 @@
 {
-    "builds": [
-      {
-        "src": "package.json",
+    "name": "apisstos",
+    "version":2,
+    "public": true,
+    "build":{
+        "src": "api/api.js", 
         "use": "@vercel/node"
-      }
+    },
+    "routes"[
+        {
+            "src":"/{.*}",
+            "dest": "api/api.js"
+        }
     ]
+
   }
   
